@@ -1,0 +1,167 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
+}
+
+h2,
+h3 {
+  color: var(--navy-blue);
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section-title {
+  line-height: 1.11;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ------------------ */
+/* Header */
+/* ------------------ */
+.logo {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--navy-blue);
+}
+
+.logo-dark span {
+  color: var(--navy-blue);
+}
+
+.address-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--ocean);
+}
+
+
+/* ------------------ */
+/* Hero */
+/* ------------------ */
+.hero-section {
+  background-color: var(--navy-blue);
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.hero-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--iris);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--ocean);
+}
+
+/* ------------------ */
+/* Contacts */
+/* ------------------ */
+.team-section {
+  background-color: var(--cloud);
+}
+
+.team-list {
+  text-align: center;
+}
+
+.team-item {
+  background: var(--white);
+}
+
+/* ------------------ */
+/* Footer */
+/* ------------------ */
+footer {
+  background-color: var(--navy-blue);
+}
+
+.logo-white span,
+footer p {
+  color: var(--cloud);
+}
