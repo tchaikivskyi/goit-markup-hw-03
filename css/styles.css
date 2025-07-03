@@ -137,10 +137,7 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 40px;
+  gap: 40px; 
 }
 
 .nav-link {
@@ -160,6 +157,7 @@ body {
 .address-list {
   display: flex;
   align-items: center;
+  gap: 40px; 
 }
 
 .address-link {
@@ -167,7 +165,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  margin-left: 40px;
   padding: 24px 0;
 }
 
