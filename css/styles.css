@@ -222,7 +222,6 @@ body {
 .features-list {
   display: flex;
   justify-content: center;
-  /* gap: 24px; */
 }
 
 .features-item {
@@ -230,9 +229,25 @@ body {
   padding: 16px;
 }
 
+.features-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.features:last-child {
+  margin-right: 0;
+}
+
 .visually-hidden {
-  display: none;
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Contacts */
@@ -248,11 +263,12 @@ body {
 
 .team-item {
   background: var(--white);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 
