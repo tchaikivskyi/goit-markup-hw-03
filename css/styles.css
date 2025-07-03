@@ -58,7 +58,6 @@ h1 {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  max-width: 500px;
   margin: 0 auto 48px auto;
 }
 
@@ -111,7 +110,7 @@ body {
 
 
 /* Header */
-header {
+.header {
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -138,7 +137,10 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .nav-link {
@@ -183,15 +185,21 @@ header {
   text-align: center;
 }
 
+.section.hero-section {
+  padding: 188px 0;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
+  max-width: 496px;
 }
 
 .hero-button {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -200,6 +208,8 @@ header {
   background: var(--iris);
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -212,9 +222,18 @@ header {
 .features-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+  padding: 16px;
+}
+
+.visually-hidden {
+  display: none;
+  visibility: hidden;
+}
 
 /* Contacts */
 .team-section {
@@ -259,7 +278,8 @@ footer {
 }
 
 .logo-white {
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 footer p {
